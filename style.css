@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0b0b0b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+}
+
+/* TARJETA */
+
+.contenedor {
+    width: 500px;
+    max-width: 90%;
+
+    padding: 40px;
+
+    background: #171717;
+
+    border-radius: 20px;
+
+    border: 2px solid #7c3aed;
+
+    box-shadow: 8px 8px 0 #ffd900;
+
+    text-align: center;
+}
+
+/* TITULO */
+
+h1 {
+    font-size: 30px;
+
+    color: #ffd900;
+
+    margin-bottom: 12px;
+}
+
+/* DESCRIPCIÓN */
+
+.descripcion {
+    color: #bdbdbd;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+/* OPCIONES */
+
+label {
+    display: flex;
+
+    align-items: center;
+
+    text-align: left;
+
+    background: #242424;
+
+    padding: 17px;
+
+    margin-bottom: 14px;
+
+    border-radius: 10px;
+
+    border: 2px solid transparent;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+label:hover {
+    border-color: #ffd900;
+
+    transform: translateX(4px);
+}
+
+/* CHECKBOX */
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+
+    margin-right: 12px;
+
+    accent-color: #ffd900;
+
+    cursor: pointer;
+}
+
+/* BOTONES */
+
+.botones {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+button {
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+/* REVISAR */
+
+#btn-revisar {
+    background: #ffd900;
+
+    color: #111;
+}
+
+#btn-revisar:hover {
+    background: #ffe84d;
+
+    transform: translateY(-2px);
+}
+
+/* ENVIAR */
+
+#btn-enviar {
+    background: #7c3aed;
+
+    color: white;
+}
+
+#btn-enviar:hover:not(:disabled) {
+    background: #8b5cf6;
+
+    transform: translateY(-2px);
+}
+
+/* ENVIAR DESACTIVADO */
+
+#btn-enviar:disabled {
+    background: #444;
+
+    color: #888;
+
+    cursor: not-allowed;
+}
+
+/* MENSAJE */
+
+#mensaje {
+    min-height: 25px;
+
+    margin-top: 25px;
+
+    margin-bottom: 0;
+
+    color: #ffd900;
+
+    font-weight: bold;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .contenedor {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

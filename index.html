@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+    <h1>¿Qué tipo de música te gusta?</h1>
+
+    <p class="descripcion">
+        Selecciona una o ambas opciones:
+    </p>
+
+    <form>
+
+        <label>
+            <input type="checkbox" id="opcion1">
+            Música Rock
+        </label>
+
+        <label>
+            <input type="checkbox" id="opcion2">
+            Música Jazz
+        </label>
+
+        <div class="botones">
+            <button type="button" id="btn-revisar">
+                 Revisar
+            </button>
+
+            <button type="button" id="btn-enviar" disabled>
+                 Enviar
+            </button>
+        </div>
+
+        <p id="mensaje"></p>
+
+    </form>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
